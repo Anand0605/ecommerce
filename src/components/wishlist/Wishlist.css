@@ -1,0 +1,10 @@
+.wish-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wish-empty .im img {
+    height: 70vh;
+    /* background-color: red; */
+}

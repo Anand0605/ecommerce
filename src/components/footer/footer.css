@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kaushan+Script&family=Lato:ital,wght@1,900&family=Playfair+Display:ital@0;1&family=Rubik+Spray+Paint&family=Rubik+Vinyl&display=swap');
+
+.footer {
+    /* border-radius: 10px 10px 0px 0px; */
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 70px;
+    background-color: #2e8dc4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+
+
+}
+
+.footer ul li {
+    list-style: none;
+    padding: 5px;
+
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+    transition: .1s ease-in-out;
+}
+
+.footer ul li a:hover {
+    color: rgb(255, 0, 98);
+    padding: 1px;
+
+}
+
+.footer h2 {
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 1px;
+    border-width: 1px;
+
+
+
+
+}
+
+.copy {
+    background-color: #2e8dc4;
+    margin-top: 3px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(254, 255, 255);
+}
+
+.copy img {
+    width: 90px;
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        font-size: 10px;
+    }
+}

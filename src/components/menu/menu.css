@@ -1,0 +1,86 @@
+.main-menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    display: flex;
+}
+
+.main-menu .left-menu {
+    background-color: rgb(240, 235, 235);
+    width: 300px;
+    height: 100vh;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.close-menu {
+    position: absolute;
+    color: white;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.main-menu .left-menu>h2 {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.main-menu .left-menu .menu-div {
+    border-bottom: 1px solid black;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-menu .left-menu div.help-setting {
+    border: none;
+}
+
+.main-menu .left-menu div ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-menu .left-menu div ul li {
+    cursor: pointer;
+    width: 100%;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu .left-menu div ul li div {
+    width: 150px;
+    display: flex;
+}
+
+.main-menu .left-menu div ul li:hover {
+    background-color: rgba(35, 143, 175, 0.1);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .main-menu .left-menu {
+        width: 200px;
+        font-size: 12px;
+    }
+}
