@@ -10,6 +10,9 @@ import Wishlist from "./components/wishlist/Wishlist"
 import Men from "./components/men/Men";
 import Women from "./components/Women/Women";
 import Electronics from "./components/Electronics/Electronics";
+import ProductDetail from "./components/productDetail/ProductDetail";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -21,12 +24,14 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/Wishlist' element={<Wishlist />} />
-        <Route path='*' element={<Error />} />
         <Route path='/Men' element={<Men />} />
         <Route path='/Women' element={<Women />} />
         <Route path='/Electronics' element={<Electronics />} />
+        <Route path="/product-detail/:id" element={<ProductDetail />} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <Footer />
+      <ToastContainer />
     </>
   );
 }

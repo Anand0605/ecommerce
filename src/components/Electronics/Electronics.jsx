@@ -1,5 +1,6 @@
 import React from 'react'
 import ItemCategory from '../main/ItemCategory'
+import './Electronics.css'
 
 function Electronics() {
     return (

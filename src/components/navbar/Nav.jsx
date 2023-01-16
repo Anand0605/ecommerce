@@ -12,10 +12,13 @@ import ManIcon from '@mui/icons-material/Man';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import Menu from '../menu/Menu';
 import { NavLink } from 'react-router-dom';
+import { useGlobalLogin } from '../../context/login-context';
 
 export default function Nav() {
 
     const [showMenu, setShowMenu] = useState(false);
+
+    const { userDetail, loginToken, logOut } = useGlobalLogin();
 
     const menuFunction = () => {
         setShowMenu(!showMenu)
@@ -46,11 +49,19 @@ export default function Nav() {
                         </div>
                     </div>
                     <div className="nav-right">
-                        <NavLink to='/login'>
-                            <div className="nav-profile">
-                                <Person2Icon className='icons' />
-                            </div>
-                        </NavLink>
+                        {
+                            loginToken ?
+                                <NavLink>
+                                    <div className="nav-profile">
+                                        <Person2Icon className='icons' />
+                                    </div>
+                                </NavLink> :
+                                <NavLink to='/login'>
+                                    <div className="nav-profile">
+                                        <Person2Icon className='icons' />
+                                    </div>
+                                </NavLink>
+                        }
                         <NavLink to='/wishlist'>
                             <div className="Wishlist">
                                 <FavoriteIcon className='icons' />
@@ -68,7 +79,7 @@ export default function Nav() {
                 <div className="navigation">
                     <div className="item" onClick={menuFunction}><MenuIcon />menu</div>
                     <NavLink to='/'>
-                        <div className="item"><HomeIcon />home</div>
+                        <div className="item"><HomeIcon />Home</div>
                     </NavLink>
                     <NavLink to='Electronics'>
                         <div className="item"><DevicesOtherIcon />Electronics</div>
@@ -76,7 +87,7 @@ export default function Nav() {
                     <NavLink to='/Men'><div className="item"><ManIcon />Men</div></NavLink>
                     <NavLink to='Women'><div className="item"><LibraryBooksIcon />Women</div></NavLink>
                 </div>
-            </div>
+            </div >
         </>
     )
 }

@@ -11,6 +11,10 @@
 
 .main-menu .left-menu {
     background-color: rgb(240, 235, 235);
+    /* background: linear-gradient(to right, #2193b0, #6dd5ed); */
+    /* background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb); */
+    /* background-color: #003333; */
+
     width: 300px;
     height: 100vh;
     position: relative;

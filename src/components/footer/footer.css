@@ -5,7 +5,17 @@
     margin-top: 0px;
     padding-top: 0px;
     padding-bottom: 70px;
-    background-color: #2e8dc4;
+    /* background-color: #2e8dc4; */
+    /* background: linear-gradient(to right, #06beb6, #48b1bf); */
+    /* background: linear-gradient(to right, #1c92d2, #f2fcfe); */
+    /* background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); */
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    /* animation: gradient 5s ease infinite; */
+    /* background: linear-gradient(293deg, #1cc9db, #0be858); */
+    /* animation: AnimationName 3s ease infinite; */
+    /* background: linear-gradient(64deg, #1cc9db, #0be858); */
+    /* animation: AnimationName 0s ease infinite; */
+    background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -46,7 +56,10 @@
 }
 
 .copy {
-    background-color: #2e8dc4;
+    /* background-color: #2e8dc4; */
+    /* background: linear-gradient(64deg, #1cc9db, #0be858); */
+    /* animation: AnimationName 0s ease infinite; */
+    background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb);
     margin-top: 3px;
     padding: 0px;
     display: flex;

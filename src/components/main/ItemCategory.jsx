@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import ItemCard from './ItemCard';
 import './main.css'
 
@@ -18,8 +19,8 @@ const ItemCategory = ({ title, category }) => {
 
     return (
         <>
-            <div className="title">
-                <h1>{title}</h1>
+            <div className="tit">
+                <h2>{title}</h2>
             </div>
             <div className="products">
                 {
@@ -27,10 +28,12 @@ const ItemCategory = ({ title, category }) => {
                     &&
                     productDetails.map((curObj) => {
                         return (
-                            <ItemCard
-                                key={curObj.id}
-                                curObj={curObj}
-                            />
+                            <NavLink to={`/product-detail/${curObj.id}`}>
+                                <ItemCard
+                                    key={curObj.id}
+                                    curObj={curObj}
+                                />
+                            </NavLink>
                         )
                     })
                 }

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './main.css'
+import Button from '@mui/material/Button';
 
 const ItemCard = ({ curObj }) => {
 
     return (
         <>
+
             <div className="item">
                 <div className="img">
                     <img src={curObj.thumbnail} alt="" />
@@ -13,9 +15,12 @@ const ItemCard = ({ curObj }) => {
                     <h3>{curObj.title.slice(0, 10)}...</h3>
                     <p>Rs. {curObj.price * 50}/-</p>
                     <p>Desc</p>
-                    <button className='cart-btn'>Add to Cart</button>
+                    <Button variant="contained" href="#contained-buttons">
+                        GO TO CART
+                    </Button>
                 </div>
             </div>
+
         </>
     )
 }
