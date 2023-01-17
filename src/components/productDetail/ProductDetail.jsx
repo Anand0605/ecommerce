@@ -1,16 +1,17 @@
 
-import { LineAxisOutlined } from '@mui/icons-material';
+// import { LineAxisOutlined } from '@mui/icons-material';
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
-import PercentIcon from '@mui/icons-material/Percent';
+// import PercentIcon from '@mui/icons-material/Percent';
 import DiscountIcon from '@mui/icons-material/Discount';
 import '../productDetail/ProductDetail.css'
 import Button from '@mui/material/Button';
 import Rating from '@mui/material/Rating';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useGlobalCart } from '../../context/cart-context';
+
 
 export default function ProductDetail() {
     const [productDetail, setProductDetail] = useState();

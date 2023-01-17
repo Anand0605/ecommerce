@@ -9,11 +9,12 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #7bdea8;
     /* padding: 0px 30px; */
-    /* background-color: rgb(90, 204, 233); */
+    /* background-color: rgb(180, 255, 238); */
     /* background: linear-gradient(64deg, #1cc9db, #0be858); */
     /* animation: AnimationName 0s ease infinite; */
-    background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb);
+    /* background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb); */
 }
 
 .all-nav {
@@ -86,13 +87,13 @@ nav {
     align-items: center;
     flex-direction: row;
     gap: 20px;
-    /* background-color: rgba(23, 87, 81, 0.877); */
+    background-color: rgba(85, 232, 236);
     /* background: linear-gradient(64deg, #1cc9db, #0be858); */
     /* animation: AnimationName 0s ease infinite; */
     /* background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb); */
 
-    background: linear-gradient(5deg, #f12121, #212ff1);
-    background-size: 400% 400%;
+    /* background: linear-gradient(5deg, #f12121, #212ff1);
+    background-size: 400% 400%; */
 
     -webkit-animation: AnimationName 2s ease infinite;
     -moz-animation: AnimationName 2s ease infinite;
