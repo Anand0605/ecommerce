@@ -13,6 +13,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useGlobalCart } from '../../context/cart-context';
 
 
+
 export default function ProductDetail() {
     const [productDetail, setProductDetail] = useState();
 
@@ -43,7 +44,6 @@ export default function ProductDetail() {
         <>
             <div className="header">
                 <div className="heading">
-
                 </div>
             </div>
 
@@ -78,8 +78,8 @@ export default function ProductDetail() {
                             <h1>{productDetail.title}</h1><br />
                             <p><Rating name="read-only" value={productDetail.rating} precision={0.2} readOnly /></p>
                             <h3>Brand  :  {productDetail.brand}</h3><br />
-                            <h4>Description     :   {productDetail.description}</h4><br />
-                            <h3>Deal of the day</h3>
+                            <h4> <h3>Description:</h3> {productDetail.description}</h4><br />
+                            <h3 className='deal'>Deal of the day</h3>
                             <h3>&#x20B9;{productDetail.price}/-</h3><br />
 
 
