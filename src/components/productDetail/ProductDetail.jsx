@@ -42,10 +42,6 @@ export default function ProductDetail() {
 
         &&
         <>
-            <div className="header">
-                <div className="heading">
-                </div>
-            </div>
 
             <div className="main-dis">
                 <div className="left-dis">
