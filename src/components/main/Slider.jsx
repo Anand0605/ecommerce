@@ -2,12 +2,12 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import img from '../../img/slider-img.jpg';
-import img1 from '../../img/slider-img1.jpg';
-import img2 from '../../img/girl-boy.jpg';
+import img1 from '../../img/kh-1.jpg';
+import img2 from '../../img/store-of-the-future.jpg';
 import img3 from '../../img/slider.jpg';
-import img4 from '../../img/ecommgirl.jpg';
+import img4 from '../../img/men.jpg';
 import img5 from '../../img/slider3.jpg';
-import img6 from '../../img/stylegirl.jpg';
+import img6 from '../../img/run.jpg';
 
 
 
