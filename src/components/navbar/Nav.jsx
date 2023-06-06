@@ -68,7 +68,7 @@ export default function Nav() {
                             </div>
                         </NavLink>
                         <NavLink to='cart'>
-                            <div className="cart">
+                            <div className="nav-cart">
                                 <ShoppingCartIcon className='icons' />
                             </div>
                         </NavLink>

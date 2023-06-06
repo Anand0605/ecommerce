@@ -10,6 +10,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #3acfe4;
+    padding-left: 20px;
+    padding-right: 20px;
     /* padding: 0px 30px; */
     /* background-color: rgb(180, 255, 238); */
 
@@ -75,8 +77,9 @@ nav {
 
 }
 
-.nav-right img {
-    width: 30px;
+.nav-right.nav-cart img {
+    /* width: 30px; */
+    width: 5px;
 
 }
 
@@ -87,12 +90,7 @@ nav {
     flex-direction: row;
     gap: 20px;
     background-color: #19a5b8;
-    /* background: linear-gradient(64deg, #1cc9db, #0be858); */
-    /* animation: AnimationName 0s ease infinite; */
-    /* background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb); */
 
-    /* background: linear-gradient(5deg, #f12121, #212ff1);
-    background-size: 400% 400%; */
 }
 
 .all-nav .navigation .item {
