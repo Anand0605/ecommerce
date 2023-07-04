@@ -4,6 +4,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 import { useGlobalCart } from '../../context/cart-context';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 
 const CartItem = ({ cartId }) => {
@@ -40,6 +41,7 @@ const CartItem = ({ cartId }) => {
                 <div className="price">
                     &#8377;<s>{cartProduct.price}</s>
                 </div>
+
                 <div className="delete" onClick={() => deleteCart(cartProduct.id)}><DeleteIcon />
 
                 </div>

@@ -101,6 +101,17 @@
     border: 2px solid black;
 }
 
+.wishlist {
+    position: relative;
+}
+
+.wishlist-icon {
+    color: red;
+    position: absolute;
+    bottom: 270px;
+    left: 75px;
+}
+
 
 @media screen and (max-width: 700px) {
     .slider {

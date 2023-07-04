@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './main.css'
 import Button from '@mui/material/Button';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 const ItemCard = ({ curObj }) => {
 
@@ -18,6 +19,7 @@ const ItemCard = ({ curObj }) => {
                     <Button variant="contained" href="#contained-buttons">
                         GO TO CART
                     </Button>
+                    <div className="wishlist"><FavoriteBorderIcon className='wishlist-icon' /></div>
                 </div>
             </div>
 

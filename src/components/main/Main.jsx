@@ -49,6 +49,16 @@ const Main = () => {
                 title={'Womens jewellery'}
                 category={'womens-jewellery'}
             />
+            <ItemCategory
+                key={131}
+                title={'motorcycle'}
+                category={'motorcycle'}
+            />
+            <ItemCategory
+                key={132}
+                title={'groceries'}
+                category={'groceries'}
+            />
         </div>
     )
 }
