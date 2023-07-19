@@ -16,6 +16,7 @@ import { useGlobalCart } from '../../context/cart-context';
 
 export default function ProductDetail() {
     const [productDetail, setProductDetail] = useState();
+    const [image, setImage] = useState([]);
 
     const { cartArray, addToCart } = useGlobalCart();
 
@@ -49,7 +50,7 @@ export default function ProductDetail() {
                         {
                             productDetail.images.map((img) => {
                                 return (
-                                    <img src={img} alt="" />
+                                    <img onMouseOver={() => setImage(img)} src={img} alt="" />
                                 )
 
                             })
@@ -58,7 +59,7 @@ export default function ProductDetail() {
                     </div>
 
                     <div className="main-img">
-                        <img src={productDetail.thumbnail} alt="" />
+                        <img src={image} alt="" />
 
                     </div>
 
@@ -104,7 +105,9 @@ export default function ProductDetail() {
                                 cartArray.includes(productDetail.id) ?
                                     <Button variant="contained" onClick={() => navigate('/Cart')}><ShoppingCartIcon />go to cart</Button> :
                                     <Button variant="contained" onClick={() => addToCart(productDetail.id)}>add to cart</Button>
+
                             }
+                            <button className='wishlist-btn'>Wishlist</button>
 
                         </div>
 

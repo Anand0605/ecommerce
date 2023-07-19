@@ -126,3 +126,13 @@
 .Buy-now.button {
     color: aquabutton;
 }
+
+.wishlist-btn {
+    height: 38px;
+    width: 150px;
+    color: aliceblue;
+    background-color: #1AA7EC;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
