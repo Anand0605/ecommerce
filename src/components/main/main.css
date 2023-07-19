@@ -4,6 +4,7 @@
 
 .main-component {
     min-height: 80vh;
+    /* background-color: #4dffff; */
 
 
 }
@@ -66,6 +67,11 @@
     margin-bottom: 20px;
 }
 
+/* .go-to-btn button {
+    background-color: #4dffff;
+    color: #4dffff;
+} */
+
 /* .cart-btn {
     background-color: aqua;
     border-radius: 5px;
@@ -85,7 +91,7 @@
 }
 
 .tit h2 {
-    background-color: #1976d2;
+    background-color: #4dffff;
     margin-left: 70px;
     border-radius: 12px;
     padding: 4px;

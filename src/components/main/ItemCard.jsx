@@ -16,7 +16,7 @@ const ItemCard = ({ curObj }) => {
                     <h3>{curObj.title.slice(0, 10)}...</h3>
                     <p>Rs. {curObj.price * 50}/-</p>
                     <p>Desc</p>
-                    <Button variant="contained" href="#contained-buttons">
+                    <Button variant="contained" className='go-to-btn' href="#contained-buttons">
                         GO TO CART
                     </Button>
                     <div className="wishlist"><FavoriteBorderIcon className='wishlist-icon' /></div>

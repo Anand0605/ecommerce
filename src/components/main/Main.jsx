@@ -51,13 +51,13 @@ const Main = () => {
             />
             <ItemCategory
                 key={131}
-                title={'motorcycle'}
+                title={'Motorcycle'}
                 category={'motorcycle'}
             />
             <ItemCategory
                 key={132}
-                title={'groceries'}
-                category={'groceries'}
+                title={'Groceries'}
+                category={'Groceries'}
             />
         </div>
     )

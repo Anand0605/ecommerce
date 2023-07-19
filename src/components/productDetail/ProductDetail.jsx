@@ -43,7 +43,6 @@ export default function ProductDetail() {
 
         &&
         <>
-
             <div className="main-dis">
                 <div className="left-dis">
                     <div className="left">
@@ -62,10 +61,6 @@ export default function ProductDetail() {
                         <img src={image} alt="" />
 
                     </div>
-
-
-
-
                 </div>
 
                 <div className="right-dis">
